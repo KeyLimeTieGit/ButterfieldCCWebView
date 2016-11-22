@@ -1,0 +1,646 @@
+BCSymbolMap Version: 2.0
++[ViewController create]
+-[ViewController viewDidLoad]
+-[ViewController preferredStatusBarStyle]
+-[ViewController loadWebWithURL:]
+-[ViewController webViewDidStartLoad:]
+___38-[ViewController webViewDidStartLoad:]_block_invoke
+___copy_helper_block_
+___destroy_helper_block_
+-[ViewController webViewDidFinishLoad:]
+___39-[ViewController webViewDidFinishLoad:]_block_invoke
+___copy_helper_block_.91
+___destroy_helper_block_.92
+-[ViewController webView:didFailLoadWithError:]
+___47-[ViewController webView:didFailLoadWithError:]_block_invoke
+-[ViewController revealController:didMoveToPosition:]
+-[ViewController phoneButtonPressed:]
+-[ViewController revealViewController]
+-[ViewController setRevealViewController:]
+-[ViewController webView]
+-[ViewController setWebView:]
+-[ViewController menuButton]
+-[ViewController setMenuButton:]
+-[ViewController .cxx_destruct]
+_OBJC_CLASS_$_ViewController
+_OBJC_IVAR_$_ViewController._webView
+_OBJC_IVAR_$_ViewController._menuButton
+___block_descriptor_tmp
+___block_descriptor_tmp.93
+___block_descriptor_tmp.109
+___block_literal_global
+_OBJC_IVAR_$_ViewController._revealViewController
+l_OBJC_PROTOCOL_$_NSObject
+l_OBJC_LABEL_PROTOCOL_$_NSObject
+l_OBJC_PROTOCOL_$_SWRevealViewControllerDelegate
+l_OBJC_LABEL_PROTOCOL_$_SWRevealViewControllerDelegate
+l_OBJC_PROTOCOL_$_UIWebViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIWebViewDelegate
+_OBJC_METACLASS_$_ViewController
+Apple LLVM version 8.0.0 (clang-800.0.42.1)
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/ViewController.m
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/ViewController.h
+__47-[ViewController webView:didFailLoadWithError:]_block_invoke
+__destroy_helper_block_
+__copy_helper_block_
+__39-[ViewController webViewDidFinishLoad:]_block_invoke
+__38-[ViewController webViewDidStartLoad:]_block_invoke
+-[UIViewController(Navigation) navBarWithTitle:andLeftButtonImage:leftButtonSelector:leftTarget:andRightButtonImage:rightButtonSelector:]
+-[UIViewController(Navigation) setNavBarTitle:]
+-[UIViewController(Navigation) addLeftButtonImageItem:selector:animation:withLeftTarget:]
+___89-[UIViewController(Navigation) addLeftButtonImageItem:selector:animation:withLeftTarget:]_block_invoke
+-[UIViewController(Navigation) addRightButtonImageItem:selector:animation:]
+___75-[UIViewController(Navigation) addRightButtonImageItem:selector:animation:]_block_invoke
+___copy_helper_block_.33
+___destroy_helper_block_.34
+-[UIViewController(Navigation) back:]
+___block_descriptor_tmp.35
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/UIViewController+Navigation.m
+__75-[UIViewController(Navigation) addRightButtonImageItem:selector:animation:]_block_invoke
+__89-[UIViewController(Navigation) addLeftButtonImageItem:selector:animation:withLeftTarget:]_block_invoke
++[AppDelegate appDelegate]
+-[AppDelegate application:didFinishLaunchingWithOptions:]
+-[AppDelegate applicationWillResignActive:]
+-[AppDelegate applicationDidEnterBackground:]
+-[AppDelegate applicationWillEnterForeground:]
+-[AppDelegate applicationDidBecomeActive:]
+-[AppDelegate applicationWillTerminate:]
+-[AppDelegate revealController:animationControllerForOperation:fromViewController:toViewController:]
+-[AppDelegate window]
+-[AppDelegate setWindow:]
+-[AppDelegate dashboardViewController]
+-[AppDelegate setDashboardViewController:]
+-[AppDelegate viewController]
+-[AppDelegate setViewController:]
+-[AppDelegate .cxx_destruct]
+_OBJC_CLASS_$_RearViewController
+_OBJC_CLASS_$_SWRevealViewController
+_OBJC_IVAR_$_AppDelegate._window
+_OBJC_IVAR_$_AppDelegate._dashboardViewController
+_OBJC_IVAR_$_AppDelegate._viewController
+l_OBJC_PROTOCOL_$_UIApplicationDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIApplicationDelegate
+_OBJC_METACLASS_$_AppDelegate
+_OBJC_CLASS_$_AppDelegate
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/AppDelegate.m
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/AppDelegate.h
++[MBProgressHUD showHUDAddedTo:animated:]
++[MBProgressHUD hideHUDForView:animated:]
++[MBProgressHUD hideAllHUDsForView:animated:]
++[MBProgressHUD HUDForView:]
++[MBProgressHUD allHUDsForView:]
+-[MBProgressHUD initWithFrame:]
+-[MBProgressHUD initWithView:]
+-[MBProgressHUD initWithWindow:]
+-[MBProgressHUD dealloc]
+-[MBProgressHUD show:]
+-[MBProgressHUD hide:]
+-[MBProgressHUD hide:afterDelay:]
+-[MBProgressHUD hideDelayed:]
+-[MBProgressHUD handleGraceTimer:]
+-[MBProgressHUD handleMinShowTimer:]
+-[MBProgressHUD didMoveToSuperview]
+-[MBProgressHUD showUsingAnimation:]
+-[MBProgressHUD hideUsingAnimation:]
+-[MBProgressHUD animationFinished:finished:context:]
+-[MBProgressHUD done]
+-[MBProgressHUD showWhileExecuting:onTarget:withObject:animated:]
+-[MBProgressHUD showAnimated:whileExecutingBlock:]
+-[MBProgressHUD showAnimated:whileExecutingBlock:completionBlock:]
+-[MBProgressHUD showAnimated:whileExecutingBlock:onQueue:]
+-[MBProgressHUD showAnimated:whileExecutingBlock:onQueue:completionBlock:]
+___74-[MBProgressHUD showAnimated:whileExecutingBlock:onQueue:completionBlock:]_block_invoke
+___74-[MBProgressHUD showAnimated:whileExecutingBlock:onQueue:completionBlock:]_block_invoke_2
+___copy_helper_block_.181
+___destroy_helper_block_.182
+-[MBProgressHUD launchExecution]
+-[MBProgressHUD cleanUp]
+-[MBProgressHUD setupLabels]
+-[MBProgressHUD updateIndicators]
+-[MBProgressHUD layoutSubviews]
+-[MBProgressHUD drawRect:]
+-[MBProgressHUD registerForKVO]
+-[MBProgressHUD unregisterFromKVO]
+-[MBProgressHUD observableKeypaths]
+-[MBProgressHUD observeValueForKeyPath:ofObject:change:context:]
+-[MBProgressHUD updateUIForKeypath:]
+-[MBProgressHUD registerForNotifications]
+-[MBProgressHUD unregisterFromNotifications]
+-[MBProgressHUD deviceOrientationDidChange:]
+-[MBProgressHUD setTransformForCurrentOrientation:]
+-[MBProgressHUD animationType]
+-[MBProgressHUD setAnimationType:]
+-[MBProgressHUD delegate]
+-[MBProgressHUD setDelegate:]
+-[MBProgressHUD opacity]
+-[MBProgressHUD setOpacity:]
+-[MBProgressHUD color]
+-[MBProgressHUD setColor:]
+-[MBProgressHUD labelFont]
+-[MBProgressHUD setLabelFont:]
+-[MBProgressHUD detailsLabelFont]
+-[MBProgressHUD setDetailsLabelFont:]
+-[MBProgressHUD indicator]
+-[MBProgressHUD setIndicator:]
+-[MBProgressHUD xOffset]
+-[MBProgressHUD setXOffset:]
+-[MBProgressHUD yOffset]
+-[MBProgressHUD setYOffset:]
+-[MBProgressHUD minSize]
+-[MBProgressHUD setMinSize:]
+-[MBProgressHUD isSquare]
+-[MBProgressHUD setSquare:]
+-[MBProgressHUD margin]
+-[MBProgressHUD setMargin:]
+-[MBProgressHUD dimBackground]
+-[MBProgressHUD setDimBackground:]
+-[MBProgressHUD graceTime]
+-[MBProgressHUD setGraceTime:]
+-[MBProgressHUD minShowTime]
+-[MBProgressHUD setMinShowTime:]
+-[MBProgressHUD graceTimer]
+-[MBProgressHUD setGraceTimer:]
+-[MBProgressHUD minShowTimer]
+-[MBProgressHUD setMinShowTimer:]
+-[MBProgressHUD taskInProgress]
+-[MBProgressHUD setTaskInProgress:]
+-[MBProgressHUD removeFromSuperViewOnHide]
+-[MBProgressHUD setRemoveFromSuperViewOnHide:]
+-[MBProgressHUD customView]
+-[MBProgressHUD setCustomView:]
+-[MBProgressHUD showStarted]
+-[MBProgressHUD setShowStarted:]
+-[MBProgressHUD mode]
+-[MBProgressHUD setMode:]
+-[MBProgressHUD labelText]
+-[MBProgressHUD setLabelText:]
+-[MBProgressHUD detailsLabelText]
+-[MBProgressHUD setDetailsLabelText:]
+-[MBProgressHUD progress]
+-[MBProgressHUD setProgress:]
+-[MBProgressHUD size]
+-[MBProgressHUD setSize:]
+-[MBProgressHUD completionBlock]
+-[MBProgressHUD setCompletionBlock:]
+-[MBProgressHUD .cxx_destruct]
+-[MBRoundProgressView progress]
+-[MBRoundProgressView setProgress:]
+-[MBRoundProgressView isAnnular]
+-[MBRoundProgressView setAnnular:]
+-[MBRoundProgressView init]
+-[MBRoundProgressView initWithFrame:]
+-[MBRoundProgressView dealloc]
+-[MBRoundProgressView drawRect:]
+-[MBRoundProgressView registerForKVO]
+-[MBRoundProgressView unregisterFromKVO]
+-[MBRoundProgressView observableKeypaths]
+-[MBRoundProgressView observeValueForKeyPath:ofObject:change:context:]
+-[MBRoundProgressView progressTintColor]
+-[MBRoundProgressView setProgressTintColor:]
+-[MBRoundProgressView backgroundTintColor]
+-[MBRoundProgressView setBackgroundTintColor:]
+-[MBRoundProgressView .cxx_destruct]
+_OBJC_CLASS_$_MBProgressHUD
+_OBJC_IVAR_$_MBProgressHUD.taskInProgress
+_OBJC_IVAR_$_MBProgressHUD.rotationTransform
+_OBJC_IVAR_$_MBProgressHUD.useAnimation
+_OBJC_IVAR_$_MBProgressHUD.showStarted
+_OBJC_IVAR_$_MBProgressHUD.animationType
+_OBJC_IVAR_$_MBProgressHUD.isFinished
+_OBJC_IVAR_$_MBProgressHUD.delegate
+_OBJC_IVAR_$_MBProgressHUD.removeFromSuperViewOnHide
+_OBJC_IVAR_$_MBProgressHUD.methodForExecution
+_OBJC_IVAR_$_MBProgressHUD.targetForExecution
+_OBJC_IVAR_$_MBProgressHUD.objectForExecution
+___block_descriptor_tmp.183
+_OBJC_IVAR_$_MBProgressHUD.label
+_OBJC_IVAR_$_MBProgressHUD.detailsLabel
+_OBJC_IVAR_$_MBProgressHUD.indicator
+_OBJC_CLASS_$_MBRoundProgressView
+_OBJC_IVAR_$_MBProgressHUD.mode
+_OBJC_IVAR_$_MBProgressHUD.customView
+_OBJC_IVAR_$_MBProgressHUD.margin
+_OBJC_IVAR_$_MBProgressHUD.yOffset
+_OBJC_IVAR_$_MBProgressHUD.xOffset
+_OBJC_IVAR_$_MBProgressHUD.square
+_OBJC_IVAR_$_MBProgressHUD.minSize
+_OBJC_IVAR_$_MBProgressHUD.size
+_OBJC_IVAR_$_MBProgressHUD.progress
+_OBJC_IVAR_$_MBProgressHUD.opacity
+_OBJC_IVAR_$_MBProgressHUD.color
+_OBJC_IVAR_$_MBProgressHUD.labelFont
+_OBJC_IVAR_$_MBProgressHUD.detailsLabelFont
+_OBJC_IVAR_$_MBProgressHUD.dimBackground
+_OBJC_IVAR_$_MBProgressHUD.graceTime
+_OBJC_IVAR_$_MBProgressHUD.minShowTime
+_OBJC_IVAR_$_MBProgressHUD.graceTimer
+_OBJC_IVAR_$_MBProgressHUD.minShowTimer
+_OBJC_IVAR_$_MBProgressHUD.labelText
+_OBJC_IVAR_$_MBProgressHUD.detailsLabelText
+_OBJC_IVAR_$_MBProgressHUD.completionBlock
+_OBJC_METACLASS_$_MBProgressHUD
+_OBJC_IVAR_$_MBRoundProgressView._progress
+_OBJC_IVAR_$_MBRoundProgressView._annular
+_OBJC_IVAR_$_MBRoundProgressView._progressTintColor
+_OBJC_IVAR_$_MBRoundProgressView._backgroundTintColor
+_OBJC_METACLASS_$_MBRoundProgressView
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/MBProgressHUD.m
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/MBProgressHUD.h
+UIInterfaceOrientationIsLandscape
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h
+__74-[MBProgressHUD showAnimated:whileExecutingBlock:onQueue:completionBlock:]_block_invoke_2
+__74-[MBProgressHUD showAnimated:whileExecutingBlock:onQueue:completionBlock:]_block_invoke
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/main.m
+main
+-[RearTableViewCell awakeFromNib]
+-[RearTableViewCell initializeCellWithTitle:]
+-[RearTableViewCell initializeCellWithTitle:withImageNamed:]
+-[RearTableViewCell image]
+-[RearTableViewCell setImage:]
+-[RearTableViewCell label]
+-[RearTableViewCell setLabel:]
+-[RearTableViewCell .cxx_destruct]
+_OBJC_CLASS_$_RearTableViewCell
+_OBJC_IVAR_$_RearTableViewCell._image
+_OBJC_IVAR_$_RearTableViewCell._label
+_OBJC_METACLASS_$_RearTableViewCell
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/RearTableViewCell.m
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/RearTableViewCell.h
+-[UIViewController(activity) showIndicator]
+-[UIViewController(activity) hideIndicator]
+___43-[UIViewController(activity) hideIndicator]_block_invoke
+_hud
+__aControllerLoadingIndicator
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/UIViewController+activity.m
+__43-[UIViewController(activity) hideIndicator]_block_invoke
++[RearViewController create]
+-[RearViewController viewDidLoad]
+-[RearViewController preferredStatusBarStyle]
+-[RearViewController tableView:numberOfRowsInSection:]
+-[RearViewController numberOfSectionsInTableView:]
+-[RearViewController tableView:cellForRowAtIndexPath:]
+-[RearViewController tableView:didSelectRowAtIndexPath:]
+-[RearViewController tableView]
+-[RearViewController setTableView:]
+-[RearViewController topLabel]
+-[RearViewController setTopLabel:]
+-[RearViewController .cxx_destruct]
+_OBJC_IVAR_$_RearViewController._tableView
+_OBJC_IVAR_$_RearViewController._topLabel
+l_OBJC_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+l_OBJC_PROTOCOL_$_UITableViewDelegate
+l_OBJC_LABEL_PROTOCOL_$_UITableViewDelegate
+l_OBJC_PROTOCOL_$_UITableViewDataSource
+l_OBJC_LABEL_PROTOCOL_$_UITableViewDataSource
+_OBJC_METACLASS_$_RearViewController
+_OBJC_IVAR_$_RearViewController._presentedRow
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/RearViewController.m
+-[SWRevealView initWithFrame:controller:]
+-[SWRevealView reloadShadow]
+-[SWRevealView hierarchycalFrameAdjustment:]
+_statusBarAdjustment
+-[SWRevealView prepareRearViewForPosition:]
+-[SWRevealView prepareRightViewForPosition:]
+-[SWRevealView unloadRearView]
+-[SWRevealView unloadRightView]
+-[SWRevealView frontLocationForPosition:]
+-[SWRevealView dragFrontViewToXLocation:]
+-[SWRevealView layoutSubviews]
+-[SWRevealView pointInsideD:withEvent:]
+-[SWRevealView pointInside:withEvent:]
+-[SWRevealView _layoutRearViewsForLocation:]
+-[SWRevealView _prepareForNewPosition:]
+-[SWRevealView _adjustedDragLocationForLocation:]
+-[SWRevealView rearView]
+-[SWRevealView rightView]
+-[SWRevealView frontView]
+-[SWRevealView disableLayout]
+-[SWRevealView setDisableLayout:]
+-[SWRevealView .cxx_destruct]
+-[SWContextTransitionObject initWithRevealController:containerView:fromVC:toVC:completion:]
+-[SWContextTransitionObject containerView]
+-[SWContextTransitionObject isAnimated]
+-[SWContextTransitionObject isInteractive]
+-[SWContextTransitionObject transitionWasCancelled]
+-[SWContextTransitionObject targetTransform]
+-[SWContextTransitionObject presentationStyle]
+-[SWContextTransitionObject updateInteractiveTransition:]
+-[SWContextTransitionObject finishInteractiveTransition]
+-[SWContextTransitionObject pauseInteractiveTransition]
+-[SWContextTransitionObject cancelInteractiveTransition]
+-[SWContextTransitionObject completeTransition:]
+-[SWContextTransitionObject viewControllerForKey:]
+-[SWContextTransitionObject viewForKey:]
+-[SWContextTransitionObject initialFrameForViewController:]
+-[SWContextTransitionObject finalFrameForViewController:]
+-[SWContextTransitionObject .cxx_destruct]
+-[SWDefaultAnimationController initWithDuration:]
+-[SWDefaultAnimationController transitionDuration:]
+-[SWDefaultAnimationController animateTransition:]
+___50-[SWDefaultAnimationController animateTransition:]_block_invoke
+___50-[SWDefaultAnimationController animateTransition:]_block_invoke.244
+___copy_helper_block_.245
+___destroy_helper_block_.246
+___50-[SWDefaultAnimationController animateTransition:]_block_invoke.249
+___copy_helper_block_.250
+___destroy_helper_block_.251
+-[SWRevealViewControllerPanGestureRecognizer touchesBegan:withEvent:]
+-[SWRevealViewControllerPanGestureRecognizer touchesMoved:withEvent:]
+-[SWRevealViewController initWithCoder:]
+-[SWRevealViewController init]
+-[SWRevealViewController initWithRearViewController:frontViewController:]
+-[SWRevealViewController _initDefaultProperties]
+-[SWRevealViewController childViewControllerForStatusBarStyle]
+-[SWRevealViewController childViewControllerForStatusBarHidden]
+-[SWRevealViewController loadView]
+-[SWRevealViewController viewDidAppear:]
+-[SWRevealViewController supportedInterfaceOrientations]
+-[SWRevealViewController setFrontViewController:]
+-[SWRevealViewController setFrontViewController:animated:]
+-[SWRevealViewController pushFrontViewController:animated:]
+-[SWRevealViewController setRearViewController:]
+-[SWRevealViewController setRearViewController:animated:]
+-[SWRevealViewController setRightViewController:]
+-[SWRevealViewController setRightViewController:animated:]
+-[SWRevealViewController revealToggleAnimated:]
+-[SWRevealViewController rightRevealToggleAnimated:]
+-[SWRevealViewController setFrontViewPosition:]
+-[SWRevealViewController setFrontViewPosition:animated:]
+-[SWRevealViewController setFrontViewShadowRadius:]
+-[SWRevealViewController setFrontViewShadowOffset:]
+-[SWRevealViewController setFrontViewShadowOpacity:]
+-[SWRevealViewController setFrontViewShadowColor:]
+-[SWRevealViewController panGestureRecognizer]
+-[SWRevealViewController tapGestureRecognizer]
+-[SWRevealViewController setClipsViewsToBounds:]
+-[SWRevealViewController revealToggle:]
+-[SWRevealViewController rightRevealToggle:]
+-[SWRevealViewController _disableUserInteraction]
+-[SWRevealViewController _restoreUserInteraction]
+-[SWRevealViewController _notifyPanGestureBegan]
+-[SWRevealViewController _notifyPanGestureMoved]
+-[SWRevealViewController _notifyPanGestureEnded]
+-[SWRevealViewController _getRevealWidth:revealOverDraw:forSymetry:]
+-[SWRevealViewController _getBounceBack:pStableDrag:forSymetry:]
+-[SWRevealViewController _getAdjustedFrontViewPosition:forSymetry:]
+-[SWRevealViewController _getDragLocationx:progress:]
+-[SWRevealViewController _getDragLocation:progress:overdrawProgress:]
+-[SWRevealViewController _enqueueBlock:]
+-[SWRevealViewController _dequeue]
+-[SWRevealViewController gestureRecognizerShouldBegin:]
+-[SWRevealViewController gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]
+-[SWRevealViewController _tapGestureShouldBegin]
+-[SWRevealViewController _panGestureShouldBegin]
+-[SWRevealViewController _handleTapGesture:]
+-[SWRevealViewController _handleRevealGesture:]
+-[SWRevealViewController _handleRevealGestureStateBeganWithRecognizer:]
+___71-[SWRevealViewController _handleRevealGestureStateBeganWithRecognizer:]_block_invoke
+-[SWRevealViewController _handleRevealGestureStateChangedWithRecognizer:]
+-[SWRevealViewController _handleRevealGestureStateEndedWithRecognizer:]
+-[SWRevealViewController _handleRevealGestureStateCancelledWithRecognizer:]
+-[SWRevealViewController _dispatchSetFrontViewPosition:animated:]
+___65-[SWRevealViewController _dispatchSetFrontViewPosition:animated:]_block_invoke
+___copy_helper_block_.433
+___destroy_helper_block_.434
+-[SWRevealViewController _dispatchPushFrontViewController:animated:]
+___68-[SWRevealViewController _dispatchPushFrontViewController:animated:]_block_invoke
+___copy_helper_block_.436
+___destroy_helper_block_.437
+___68-[SWRevealViewController _dispatchPushFrontViewController:animated:]_block_invoke.439
+___copy_helper_block_.440
+___destroy_helper_block_.441
+___68-[SWRevealViewController _dispatchPushFrontViewController:animated:]_block_invoke.443
+___copy_helper_block_.444
+___destroy_helper_block_.445
+___68-[SWRevealViewController _dispatchPushFrontViewController:animated:]_block_invoke.447
+___copy_helper_block_.448
+___destroy_helper_block_.449
+-[SWRevealViewController _dispatchTransitionOperation:withViewController:animated:]
+___83-[SWRevealViewController _dispatchTransitionOperation:withViewController:animated:]_block_invoke
+___copy_helper_block_.451
+___destroy_helper_block_.452
+-[SWRevealViewController _setFrontViewPosition:withDuration:]
+___61-[SWRevealViewController _setFrontViewPosition:withDuration:]_block_invoke
+___copy_helper_block_.461
+___destroy_helper_block_.462
+___61-[SWRevealViewController _setFrontViewPosition:withDuration:]_block_invoke.464
+___copy_helper_block_.465
+___destroy_helper_block_.466
+-[SWRevealViewController _performTransitionOperation:withViewController:animated:]
+___82-[SWRevealViewController _performTransitionOperation:withViewController:animated:]_block_invoke
+___copy_helper_block_.478
+___destroy_helper_block_.479
+-[SWRevealViewController _frontViewDeploymentForNewFrontViewPosition:]
+___70-[SWRevealViewController _frontViewDeploymentForNewFrontViewPosition:]_block_invoke
+___copy_helper_block_.495
+___destroy_helper_block_.496
+-[SWRevealViewController _rearViewDeploymentForNewFrontViewPosition:]
+___69-[SWRevealViewController _rearViewDeploymentForNewFrontViewPosition:]_block_invoke
+___copy_helper_block_.500
+___destroy_helper_block_.501
+-[SWRevealViewController _rightViewDeploymentForNewFrontViewPosition:]
+___70-[SWRevealViewController _rightViewDeploymentForNewFrontViewPosition:]_block_invoke
+___copy_helper_block_.505
+___destroy_helper_block_.506
+-[SWRevealViewController _deploymentForViewController:inView:appear:disappear:]
+___79-[SWRevealViewController _deploymentForViewController:inView:appear:disappear:]_block_invoke
+-[SWRevealViewController _deployForViewController:inView:]
+___58-[SWRevealViewController _deployForViewController:inView:]_block_invoke
+___58-[SWRevealViewController _deployForViewController:inView:]_block_invoke_2
+-[SWRevealViewController _undeployForViewController:]
+___53-[SWRevealViewController _undeployForViewController:]_block_invoke
+___53-[SWRevealViewController _undeployForViewController:]_block_invoke_2
+___copy_helper_block_.527
+___destroy_helper_block_.528
+-[SWRevealViewController _transitionFromViewController:toViewController:inView:]
+___80-[SWRevealViewController _transitionFromViewController:toViewController:inView:]_block_invoke
+___80-[SWRevealViewController _transitionFromViewController:toViewController:inView:]_block_invoke_2
+___copy_helper_block_.540
+___destroy_helper_block_.541
+-[SWRevealViewController loadStoryboardControllers]
++[SWRevealViewController viewControllerWithRestorationIdentifierPath:coder:]
+-[SWRevealViewController encodeRestorableStateWithCoder:]
+-[SWRevealViewController decodeRestorableStateWithCoder:]
+-[SWRevealViewController applicationFinishedRestoringState]
+-[SWRevealViewController rearViewController]
+-[SWRevealViewController rightViewController]
+-[SWRevealViewController frontViewController]
+-[SWRevealViewController frontViewPosition]
+-[SWRevealViewController rearViewRevealWidth]
+-[SWRevealViewController setRearViewRevealWidth:]
+-[SWRevealViewController rightViewRevealWidth]
+-[SWRevealViewController setRightViewRevealWidth:]
+-[SWRevealViewController rearViewRevealOverdraw]
+-[SWRevealViewController setRearViewRevealOverdraw:]
+-[SWRevealViewController rightViewRevealOverdraw]
+-[SWRevealViewController setRightViewRevealOverdraw:]
+-[SWRevealViewController rearViewRevealDisplacement]
+-[SWRevealViewController setRearViewRevealDisplacement:]
+-[SWRevealViewController rightViewRevealDisplacement]
+-[SWRevealViewController setRightViewRevealDisplacement:]
+-[SWRevealViewController draggableBorderWidth]
+-[SWRevealViewController setDraggableBorderWidth:]
+-[SWRevealViewController bounceBackOnOverdraw]
+-[SWRevealViewController setBounceBackOnOverdraw:]
+-[SWRevealViewController bounceBackOnLeftOverdraw]
+-[SWRevealViewController setBounceBackOnLeftOverdraw:]
+-[SWRevealViewController stableDragOnOverdraw]
+-[SWRevealViewController setStableDragOnOverdraw:]
+-[SWRevealViewController stableDragOnLeftOverdraw]
+-[SWRevealViewController setStableDragOnLeftOverdraw:]
+-[SWRevealViewController presentFrontViewHierarchically]
+-[SWRevealViewController setPresentFrontViewHierarchically:]
+-[SWRevealViewController quickFlickVelocity]
+-[SWRevealViewController setQuickFlickVelocity:]
+-[SWRevealViewController toggleAnimationDuration]
+-[SWRevealViewController setToggleAnimationDuration:]
+-[SWRevealViewController toggleAnimationType]
+-[SWRevealViewController setToggleAnimationType:]
+-[SWRevealViewController springDampingRatio]
+-[SWRevealViewController setSpringDampingRatio:]
+-[SWRevealViewController replaceViewAnimationDuration]
+-[SWRevealViewController setReplaceViewAnimationDuration:]
+-[SWRevealViewController frontViewShadowRadius]
+-[SWRevealViewController frontViewShadowOffset]
+-[SWRevealViewController frontViewShadowOpacity]
+-[SWRevealViewController frontViewShadowColor]
+-[SWRevealViewController clipsViewsToBounds]
+-[SWRevealViewController extendsPointInsideHit]
+-[SWRevealViewController setExtendsPointInsideHit:]
+-[SWRevealViewController delegate]
+-[SWRevealViewController setDelegate:]
+-[SWRevealViewController .cxx_destruct]
+-[UIViewController(SWRevealViewController) revealViewController]
+-[SWRevealViewControllerSegueSetController perform]
+-[SWRevealViewControllerSeguePushController perform]
+_OBJC_CLASS_$_SWRevealView
+_OBJC_IVAR_$_SWRevealView._c
+_OBJC_IVAR_$_SWRevealView._frontView
+_OBJC_IVAR_$_SWRevealView._rearView
+_OBJC_IVAR_$_SWRevealView._rightView
+_OBJC_IVAR_$_SWRevealView._disableLayout
+_OBJC_METACLASS_$_SWRevealView
+_OBJC_CLASS_$_SWContextTransitionObject
+_OBJC_IVAR_$_SWContextTransitionObject._revealVC
+_OBJC_IVAR_$_SWContextTransitionObject._view
+_OBJC_IVAR_$_SWContextTransitionObject._fromVC
+_OBJC_IVAR_$_SWContextTransitionObject._toVC
+_OBJC_IVAR_$_SWContextTransitionObject._completion
+l_OBJC_PROTOCOL_$_UIViewControllerContextTransitioning
+l_OBJC_LABEL_PROTOCOL_$_UIViewControllerContextTransitioning
+_OBJC_METACLASS_$_SWContextTransitionObject
+_OBJC_CLASS_$_SWDefaultAnimationController
+_OBJC_IVAR_$_SWDefaultAnimationController._duration
+___block_descriptor_tmp.248
+___block_descriptor_tmp.252
+l_OBJC_PROTOCOL_$_UIViewControllerAnimatedTransitioning
+l_OBJC_LABEL_PROTOCOL_$_UIViewControllerAnimatedTransitioning
+_OBJC_METACLASS_$_SWDefaultAnimationController
+_OBJC_CLASS_$_SWRevealViewControllerPanGestureRecognizer
+_OBJC_IVAR_$_SWRevealViewControllerPanGestureRecognizer._beginPoint
+_OBJC_IVAR_$_SWRevealViewControllerPanGestureRecognizer._dragging
+_OBJC_METACLASS_$_SWRevealViewControllerPanGestureRecognizer
+_FrontViewPositionNone
+_OBJC_IVAR_$_SWRevealViewController._frontViewPosition
+_OBJC_IVAR_$_SWRevealViewController._rearViewPosition
+_OBJC_IVAR_$_SWRevealViewController._rightViewPosition
+_OBJC_IVAR_$_SWRevealViewController._rearViewRevealWidth
+_OBJC_IVAR_$_SWRevealViewController._rearViewRevealOverdraw
+_OBJC_IVAR_$_SWRevealViewController._rearViewRevealDisplacement
+_OBJC_IVAR_$_SWRevealViewController._rightViewRevealWidth
+_OBJC_IVAR_$_SWRevealViewController._rightViewRevealOverdraw
+_OBJC_IVAR_$_SWRevealViewController._rightViewRevealDisplacement
+_OBJC_IVAR_$_SWRevealViewController._bounceBackOnOverdraw
+_OBJC_IVAR_$_SWRevealViewController._bounceBackOnLeftOverdraw
+_OBJC_IVAR_$_SWRevealViewController._stableDragOnOverdraw
+_OBJC_IVAR_$_SWRevealViewController._stableDragOnLeftOverdraw
+_OBJC_IVAR_$_SWRevealViewController._presentFrontViewHierarchically
+_OBJC_IVAR_$_SWRevealViewController._quickFlickVelocity
+_OBJC_IVAR_$_SWRevealViewController._toggleAnimationDuration
+_OBJC_IVAR_$_SWRevealViewController._toggleAnimationType
+_OBJC_IVAR_$_SWRevealViewController._springDampingRatio
+_OBJC_IVAR_$_SWRevealViewController._replaceViewAnimationDuration
+_OBJC_IVAR_$_SWRevealViewController._frontViewShadowRadius
+_OBJC_IVAR_$_SWRevealViewController._frontViewShadowOffset
+_OBJC_IVAR_$_SWRevealViewController._frontViewShadowOpacity
+_OBJC_IVAR_$_SWRevealViewController._frontViewShadowColor
+_OBJC_IVAR_$_SWRevealViewController._userInteractionStore
+_OBJC_IVAR_$_SWRevealViewController._animationQueue
+_OBJC_IVAR_$_SWRevealViewController._draggableBorderWidth
+_OBJC_IVAR_$_SWRevealViewController._clipsViewsToBounds
+_OBJC_IVAR_$_SWRevealViewController._extendsPointInsideHit
+_OBJC_IVAR_$_SWRevealViewController._frontViewController
+_OBJC_IVAR_$_SWRevealViewController._rearViewController
+_OBJC_IVAR_$_SWRevealViewController._rightViewController
+_OBJC_IVAR_$_SWRevealViewController._contentView
+_OBJC_IVAR_$_SWRevealViewController._panGestureRecognizer
+_OBJC_IVAR_$_SWRevealViewController._tapGestureRecognizer
+_OBJC_IVAR_$_SWRevealViewController._delegate
+___block_descriptor_tmp.411
+_OBJC_IVAR_$_SWRevealViewController._panInitialFrontPosition
+___block_descriptor_tmp.435
+___block_descriptor_tmp.438
+___block_descriptor_tmp.442
+___block_descriptor_tmp.446
+___block_descriptor_tmp.450
+___block_descriptor_tmp.453
+___block_descriptor_tmp.463
+___block_descriptor_tmp.467
+___block_descriptor_tmp.480
+___block_descriptor_tmp.497
+___block_descriptor_tmp.502
+___block_descriptor_tmp.507
+___block_descriptor_tmp.512
+___block_literal_global.513
+___block_descriptor_tmp.514
+___block_literal_global.515
+___block_descriptor_tmp.523
+___block_literal_global.524
+___block_descriptor_tmp.525
+___block_literal_global.526
+___block_descriptor_tmp.529
+___block_descriptor_tmp.530
+___block_literal_global.531
+___block_descriptor_tmp.542
+_SWSegueRearIdentifier
+_SWSegueFrontIdentifier
+_SWSegueRightIdentifier
+_OBJC_IVAR_$_SWRevealViewController._rightTransitioningController
+_OBJC_IVAR_$_SWRevealViewController._frontTransitioningController
+_OBJC_IVAR_$_SWRevealViewController._rearTransitioningController
+l_OBJC_PROTOCOL_$_UIGestureRecognizerDelegate
+l_OBJC_LABEL_PROTOCOL_$_UIGestureRecognizerDelegate
+_OBJC_METACLASS_$_SWRevealViewController
+_OBJC_METACLASS_$_SWRevealViewControllerSegueSetController
+_OBJC_CLASS_$_SWRevealViewControllerSegueSetController
+_OBJC_METACLASS_$_SWRevealViewControllerSeguePushController
+_OBJC_CLASS_$_SWRevealViewControllerSeguePushController
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/SWRevealViewController.m
+/Users/sameersiddiqui/Projects/ButterfieldCCWebView/ButterfieldCCWebView/SWRevealViewController.h
+__80-[SWRevealViewController _transitionFromViewController:toViewController:inView:]_block_invoke_2
+__80-[SWRevealViewController _transitionFromViewController:toViewController:inView:]_block_invoke
+__53-[SWRevealViewController _undeployForViewController:]_block_invoke_2
+__53-[SWRevealViewController _undeployForViewController:]_block_invoke
+__58-[SWRevealViewController _deployForViewController:inView:]_block_invoke_2
+__58-[SWRevealViewController _deployForViewController:inView:]_block_invoke
+__79-[SWRevealViewController _deploymentForViewController:inView:appear:disappear:]_block_invoke
+__70-[SWRevealViewController _rightViewDeploymentForNewFrontViewPosition:]_block_invoke
+__69-[SWRevealViewController _rearViewDeploymentForNewFrontViewPosition:]_block_invoke
+__70-[SWRevealViewController _frontViewDeploymentForNewFrontViewPosition:]_block_invoke
+__82-[SWRevealViewController _performTransitionOperation:withViewController:animated:]_block_invoke
+__61-[SWRevealViewController _setFrontViewPosition:withDuration:]_block_invoke.464
+__61-[SWRevealViewController _setFrontViewPosition:withDuration:]_block_invoke
+__83-[SWRevealViewController _dispatchTransitionOperation:withViewController:animated:]_block_invoke
+__68-[SWRevealViewController _dispatchPushFrontViewController:animated:]_block_invoke.447
+__68-[SWRevealViewController _dispatchPushFrontViewController:animated:]_block_invoke.443
+__68-[SWRevealViewController _dispatchPushFrontViewController:animated:]_block_invoke.439
+__68-[SWRevealViewController _dispatchPushFrontViewController:animated:]_block_invoke
+__65-[SWRevealViewController _dispatchSetFrontViewPosition:animated:]_block_invoke
+__71-[SWRevealViewController _handleRevealGestureStateBeganWithRecognizer:]_block_invoke
+__50-[SWDefaultAnimationController animateTransition:]_block_invoke.249
+__50-[SWDefaultAnimationController animateTransition:]_block_invoke.244
+__50-[SWDefaultAnimationController animateTransition:]_block_invoke
+scaledValue
+statusBarAdjustment
