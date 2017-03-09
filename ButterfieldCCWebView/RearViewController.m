@@ -111,26 +111,26 @@
     
     if (indexPath.row == 0)
     {
-        [[AppDelegate appDelegate].dashboardViewController loadWebWithURL:@"https://www.butterfieldcc.org/left/club-central/current-newsletter-1135.html"];
+        [[AppDelegate appDelegate].dashboardViewController loadWebWithURL:@"https://butterfieldcc.org/left/club-central/current-newsletter-1135.html"];
     }
     else if (indexPath.row == 1)
     {
-        [[AppDelegate appDelegate].dashboardViewController loadWebWithURL:@"https://www.butterfieldcc.org/left/club-central/club-events-1134.html"];
+        [[AppDelegate appDelegate].dashboardViewController loadWebWithURL:@"https://butterfieldcc.org/left/club-central/club-events-1134.html"];
     }
 
     else if (indexPath.row == 2)
     {
-        [[AppDelegate appDelegate].dashboardViewController loadWebWithURL:@"https://www.butterfieldcc.org/left/club-central/member-roster-1043.html"];
+        [[AppDelegate appDelegate].dashboardViewController loadWebWithURL:@"https://butterfieldcc.org/left/club-central/member-roster-1043.html"];
 
     }
     else if (indexPath.row == 3)
     {
-        [[AppDelegate appDelegate].dashboardViewController loadWebWithURL:@"https://www.butterfieldcc.org/left/about/the-bcc-story-993.html"];
+        [[AppDelegate appDelegate].dashboardViewController loadWebWithURL:@"https://butterfieldcc.org/left/about/the-bcc-story-993.html"];
         
     }
     else if (indexPath.row == 4)
     {
-        [[AppDelegate appDelegate].dashboardViewController loadWebWithURL:@"https://www.butterfieldcc.org/right/my-account/edit-profile-1050.html"];
+        [[AppDelegate appDelegate].dashboardViewController loadWebWithURL:@"https://butterfieldcc.org/right/my-account/edit-profile-1050.html"];
         
     }
 //    else if (indexPath.row == 5)

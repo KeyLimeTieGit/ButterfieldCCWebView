@@ -9,20 +9,24 @@
 #import "ViewController.h"
 #import "UIViewController+Navigation.h"
 #import "UIViewController+activity.h"
+#import "AppDelegate.h"
 
 
 
 @interface ViewController () <SWRevealViewControllerDelegate, UIWebViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 @property (weak, nonatomic) IBOutlet UIButton *menuButton;
 
 @end
 
 @implementation ViewController
+
 + (ViewController *)create {
     ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:NSStringFromClass([ViewController class])];
     return vc;
 }
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
@@ -46,19 +50,25 @@
     addStatusBar.backgroundColor =  [UIColor colorWithRed:0.827 green:0.859 blue:0.875 alpha:1.00];
     [self.view addSubview:addStatusBar];
     [self.navigationController.navigationBar addSubview:addStatusBar];
-
-    NSString *urlAddress = @"https://www.butterfieldcc.org/login-939.html";
+    
+    NSString *urlAddress = @"https://butterfieldcc.org/left/club-central/current-newsletter-1135.html";
     NSURL *url = [NSURL URLWithString:urlAddress];
     NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
     [_webView loadRequest:requestObj];
     _webView.delegate=self;
 }
 
--(UIStatusBarStyle)preferredStatusBarStyle{
-    return UIStatusBarStyleLightContent;
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    NSString *urlAddress = @"https://butterfieldcc.org/left/club-central/current-newsletter-1135.html";
+    NSURL *url = [NSURL URLWithString:urlAddress];
+    NSURLRequest *requestObj = [NSURLRequest requestWithURL:url];
+    [_webView loadRequest:requestObj];
 }
 
-
+- (UIStatusBarStyle)preferredStatusBarStyle{
+    return UIStatusBarStyleLightContent;
+}
 
 - (void)loadWebWithURL:(NSString *)urlString {
     NSString *urlAddress = urlString;
@@ -67,41 +77,44 @@
     [_webView loadRequest:requestObj];
 }
 
--(void)webViewDidStartLoad:(UIWebView *)webView {
+- (void)webViewDidStartLoad:(UIWebView *)webView {
     dispatch_async(dispatch_get_main_queue(), ^{
         [self showIndicator];
     });
 
-    NSLog(@"strated");
+    NSLog(@"started");
 }
--(void)webViewDidFinishLoad:(UIWebView *)webView {
-    NSString *fillDataJsCall = [NSString stringWithFormat:@"document.getElementById('lgUserName').value = '%@';document.getElementById('lgPassword').value = '%@';", @"pautsch", @"Soda7632"];
-    [webView stringByEvaluatingJavaScriptFromString:fillDataJsCall];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1 * NSEC_PER_SEC), dispatch_get_main_queue(), ^(void)
-                   {
-                       [webView stringByEvaluatingJavaScriptFromString:@"document.forms[\"lgLoginButton\"].submit();"];
-                   });
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+
     [self hideIndicator];
 
+    if ([webView.request.URL.absoluteString containsString:@"login"] || [webView.request.URL.absoluteString isEqualToString:@"https://butterfieldcc.org/"]) {
+        [[AppDelegate appDelegate] flipToLogin];
+    }
+    
     NSLog(@"finished");
 }
--(void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
-    [self hideIndicator];
-    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Sorry"
-                                                                   message:@"The page could not load\nPlease try again"
-                                                            preferredStyle:UIAlertControllerStyleAlert];
-    
-  
-    UIAlertAction* user3 = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault
-                                                  handler:^(UIAlertAction * action) {
-                                                     
-                                                  }];
-       [alert addAction:user3];
-    
-    [self presentViewController:alert animated:YES completion:nil];
-    NSLog(@"%@",error.localizedDescription);
-}
+
+//- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+//    [self hideIndicator];
+//    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Sorry"
+//                                                                   message:@"The page could not load\nPlease try again"
+//                                                            preferredStyle:UIAlertControllerStyleAlert];
+//    
+//  
+//    UIAlertAction* user3 = [UIAlertAction actionWithTitle:@"Ok" style:UIAlertActionStyleDefault
+//                                                  handler:^(UIAlertAction * action) {
+//                                                     
+//                                                  }];
+//       [alert addAction:user3];
+//    
+//    [self presentViewController:alert animated:YES completion:nil];
+//    NSLog(@"%@",error.localizedDescription);
+//}
+
 #pragma mark - SWRevealViewControllerDelegate
+
 - (void)revealController:(SWRevealViewController *)revealController didMoveToPosition:(FrontViewPosition)position {
     if (FrontViewPositionRight == position) {
         self.view.userInteractionEnabled = NO;
@@ -110,10 +123,10 @@
         self.view.userInteractionEnabled = YES;
     }
 }
+
 - (IBAction)phoneButtonPressed:(id)sender {
     NSURL *phoneNumber = [NSURL URLWithString:@"telprompt://+1(630)323-1000"];
     [[UIApplication sharedApplication] openURL:phoneNumber options:@{} completionHandler:nil];
-    
 }
 
 @end

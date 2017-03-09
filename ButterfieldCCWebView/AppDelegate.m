@@ -9,8 +9,12 @@
 #import "AppDelegate.h"
 #import "ViewController.h"
 #import "RearViewController.h"
+#import "LoginViewController.h"
+#import "DummyViewController.h"
 
-@interface AppDelegate () <SWRevealViewControllerDelegate>
+
+
+@interface AppDelegate () <SWRevealViewControllerDelegate, LoginCheck>
 
 @end
 
@@ -23,13 +27,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    [NSThread sleepForTimeInterval:0.5];
+//    [NSThread sleepForTimeInterval:0.5];
 
     [UINavigationBar appearance].barStyle = UIBarStyleBlack;
+    
     [UINavigationBar appearance].barTintColor =  [UIColor colorWithRed:0.827 green:0.859 blue:0.875 alpha:1.00];
-    
-    
-    
     
     
     [[UINavigationBar appearance] setBackgroundImage:[UIImage new]
@@ -43,7 +45,7 @@
     ViewController *frontViewController = [ViewController create];
     RearViewController *rearViewController = [RearViewController create];
     
-//    UINavigationController *frontNavigationController = [[UINavigationController alloc] initWithRootViewController:frontViewController];
+
     UINavigationController *rearNavigationController = [[UINavigationController alloc] initWithRootViewController:rearViewController];
     
     SWRevealViewController *revealController = [[SWRevealViewController alloc] initWithRearViewController:rearNavigationController frontViewController:frontViewController];
@@ -53,9 +55,13 @@
     self.dashboardViewController = frontViewController;
     self.viewController = revealController;
     frontViewController.revealViewController = revealController;
+        
+    DummyViewController *dummy = [DummyViewController create];
+    dummy.delegate = self;
+    self.window.rootViewController = dummy;
     
-    self.window.rootViewController = self.viewController;
     [self.window makeKeyAndVisible];
+
 
     return YES;
 }
@@ -97,6 +103,51 @@
     return nil;
 }
 
+
+#pragma mark - Root View Controller
+
+- (void)flipToDashboard {
+    [self flipViewController:self.viewController withCompletionBlock:nil];
+}
+- (void)flipToLogin {
+    LoginViewController *vc = [LoginViewController create];
+    [self flipViewController:vc withCompletionBlock:nil];
+
+}
+
+- (void)flipViewController:(UIViewController *)viewController withCompletionBlock:(void (^)(id selectedValue))completionBlock {
+    // Display the new view controller with a flip animation
+    [UIView transitionWithView:self.window
+                      duration:0.5
+                       options:UIViewAnimationOptionTransitionFlipFromLeft
+                    animations:^{
+                        [self.window.rootViewController.view removeFromSuperview];
+                        [self.window addSubview:viewController.view];
+                        self.window.rootViewController = viewController;
+                        
+                        if (completionBlock) {
+                            completionBlock(self.dashboardViewController);
+                        }
+                    }
+                    completion:NULL];
+}
+
+- (void)userLoggedIn:(BOOL)loggedIN {
+    if (loggedIN) {
+        [self flipViewController:self.viewController withCompletionBlock:^(id selectedValue) {
+            
+        }];
+    }
+    else {
+        
+        LoginViewController *vc = [LoginViewController create];
+        vc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+        self.window.rootViewController = vc;
+        [self.window makeKeyAndVisible];
+
+
+    }
+}
 
 
 @end

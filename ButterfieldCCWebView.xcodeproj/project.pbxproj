@@ -20,6 +20,10 @@
 		9C0BB1D81DE4A9E200C3A06D /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0BB1D71DE4A9E200C3A06D /* Media.xcassets */; };
 		9C2DC5EF1DE4A73C00933515 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C2DC5EE1DE4A73C00933515 /* main.m */; };
 		9C2DC5FD1DE4A73C00933515 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C2DC5FB1DE4A73C00933515 /* LaunchScreen.storyboard */; };
+		9CA4B7151E71B24300070121 /* login.html in Resources */ = {isa = PBXBuildFile; fileRef = 9CA4B7141E71B24300070121 /* login.html */; };
+		9CA4B7181E71B4DF00070121 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4B7171E71B4DF00070121 /* LoginViewController.m */; };
+		9CA4B71B1E71C98600070121 /* DummyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4B71A1E71C98600070121 /* DummyViewController.m */; };
+		9CA4B71E1E71E9C700070121 /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CA4B71D1E71E9C700070121 /* KeychainWrapper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,13 @@
 		9C2DC5EE1DE4A73C00933515 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9C2DC5FC1DE4A73C00933515 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C2DC5FE1DE4A73C00933515 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CA4B7141E71B24300070121 /* login.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = login.html; sourceTree = "<group>"; };
+		9CA4B7161E71B4DF00070121 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		9CA4B7171E71B4DF00070121 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		9CA4B7191E71C98600070121 /* DummyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DummyViewController.h; sourceTree = "<group>"; };
+		9CA4B71A1E71C98600070121 /* DummyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DummyViewController.m; sourceTree = "<group>"; };
+		9CA4B71C1E71E9C700070121 /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		9CA4B71D1E71E9C700070121 /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +89,7 @@
 		9C2DC5EC1DE4A73C00933515 /* ButterfieldCCWebView */ = {
 			isa = PBXGroup;
 			children = (
+				9CA4B7141E71B24300070121 /* login.html */,
 				9C0BB1B91DE4A8E800C3A06D /* AppDelegate.h */,
 				9C0BB1BA1DE4A8E800C3A06D /* AppDelegate.m */,
 				9C0BB1BC1DE4A8E800C3A06D /* MBProgressHUD.h */,
@@ -92,6 +104,10 @@
 				9C0BB1C51DE4A8E800C3A06D /* UIViewController+activity.m */,
 				9C0BB1C61DE4A8E800C3A06D /* UIViewController+Navigation.h */,
 				9C0BB1C71DE4A8E800C3A06D /* UIViewController+Navigation.m */,
+				9CA4B7161E71B4DF00070121 /* LoginViewController.h */,
+				9CA4B7171E71B4DF00070121 /* LoginViewController.m */,
+				9CA4B7191E71C98600070121 /* DummyViewController.h */,
+				9CA4B71A1E71C98600070121 /* DummyViewController.m */,
 				9C0BB1C81DE4A8E800C3A06D /* ViewController.h */,
 				9C0BB1C91DE4A8E800C3A06D /* ViewController.m */,
 				9C0BB1BB1DE4A8E800C3A06D /* Assets.xcassets */,
@@ -99,6 +115,8 @@
 				9C0BB1D31DE4A8EE00C3A06D /* Main.storyboard */,
 				9C2DC5FB1DE4A73C00933515 /* LaunchScreen.storyboard */,
 				9C2DC5FE1DE4A73C00933515 /* Info.plist */,
+				9CA4B71C1E71E9C700070121 /* KeychainWrapper.h */,
+				9CA4B71D1E71E9C700070121 /* KeychainWrapper.m */,
 				9C2DC5ED1DE4A73C00933515 /* Supporting Files */,
 			);
 			path = ButterfieldCCWebView;
@@ -138,7 +156,7 @@
 		9C2DC5E21DE4A73C00933515 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = KeyLimeTie;
 				TargetAttributes = {
 					9C2DC5E91DE4A73C00933515 = {
@@ -173,6 +191,7 @@
 			files = (
 				9C0BB1D41DE4A8EE00C3A06D /* Main.storyboard in Resources */,
 				9C0BB1CB1DE4A8E800C3A06D /* Assets.xcassets in Resources */,
+				9CA4B7151E71B24300070121 /* login.html in Resources */,
 				9C0BB1D81DE4A9E200C3A06D /* Media.xcassets in Resources */,
 				9C2DC5FD1DE4A73C00933515 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -188,10 +207,13 @@
 				9C0BB1D21DE4A8E800C3A06D /* ViewController.m in Sources */,
 				9C0BB1D11DE4A8E800C3A06D /* UIViewController+Navigation.m in Sources */,
 				9C0BB1CA1DE4A8E800C3A06D /* AppDelegate.m in Sources */,
+				9CA4B71B1E71C98600070121 /* DummyViewController.m in Sources */,
 				9C0BB1CC1DE4A8E800C3A06D /* MBProgressHUD.m in Sources */,
+				9CA4B7181E71B4DF00070121 /* LoginViewController.m in Sources */,
 				9C2DC5EF1DE4A73C00933515 /* main.m in Sources */,
 				9C0BB1CD1DE4A8E800C3A06D /* RearTableViewCell.m in Sources */,
 				9C0BB1D01DE4A8E800C3A06D /* UIViewController+activity.m in Sources */,
+				9CA4B71E1E71E9C700070121 /* KeychainWrapper.m in Sources */,
 				9C0BB1CE1DE4A8E800C3A06D /* RearViewController.m in Sources */,
 				9C0BB1CF1DE4A8E800C3A06D /* SWRevealViewController.m in Sources */,
 			);
@@ -229,6 +251,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -277,6 +300,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
